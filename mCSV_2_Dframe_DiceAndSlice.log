@@ -1,0 +1,125 @@
+Sun Dec 29 01:07:57 AM PST 2024
+ls: cannot access './data': No such file or directory
+Sun Dec 29 01:07:57 AM PST 2024
+
+Dynamically generated CSV file:
+'./data/carsales.csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+df_original info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 7 entries, One to Seven
+Data columns (total 7 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   Hyundai   7 non-null      int64
+ 1   Mazda     7 non-null      int64
+ 2   Mercedes  7 non-null      int64
+ 3   Ford      7 non-null      int64
+ 4   BYD       7 non-null      int64
+ 5   Renault   7 non-null      int64
+ 6   Volvo     7 non-null      int64
+dtypes: int64(7)
+memory usage: 448.0+ bytes
+
+df_original:
+                Hyundai  Mazda  Mercedes  Ford  BYD  Renault  Volvo
+Sales Location                                                     
+One                   2     12         2     3    9       12      1
+Two                   6     11         4     0    3        1      4
+Three                 2      0         0     0    4        0      0
+Four                  3      0         4     1    1        0      0
+Five                  0      0         0     6    0        3      0
+Six                   4      4         3    12    0        1     11
+Seven                 7      1         3     5    1        1     12
+
+Dynamically generated CSV file:
+'./data/COLUMNS_('Mazda',).csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Column-based subset COLUMNS: ('Mazda',)
+                Mazda
+Sales Location       
+One                12
+Two                11
+Three               0
+Four                0
+Five                0
+Six                 4
+Seven               1
+
+Dynamically generated CSV file:
+'./data/ROWS_Mazda > 1 and Mazda < 5.csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Query-based subset ROWS: Mazda > 1 and Mazda < 5
+                Hyundai  Mazda  Mercedes  Ford  BYD  Renault  Volvo
+Sales Location                                                     
+Six                   4      4         3    12    0        1     11
+
+Dynamically generated CSV file:
+'./data/COLUMNS_('Mazda', 'Hyundai').csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Column-based subset COLUMNS: ('Mazda', 'Hyundai')
+                Mazda  Hyundai
+Sales Location                
+One                12        2
+Two                11        6
+Three               0        2
+Four                0        3
+Five                0        0
+Six                 4        4
+Seven               1        7
+
+Dynamically generated CSV file:
+'./data/COLUMNS_('Hyundai',).csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Column-based subset COLUMNS: ('Hyundai',)
+                Hyundai
+Sales Location         
+One                   2
+Two                   6
+Three                 2
+Four                  3
+Five                  0
+Six                   4
+Seven                 7
+
+Dynamically generated CSV file:
+'./data/ROWS_Hyundai > 1 and Hyundai < 5.csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Query-based subset ROWS: Hyundai > 1 and Hyundai < 5
+                Hyundai  Mazda  Mercedes  Ford  BYD  Renault  Volvo
+Sales Location                                                     
+One                   2     12         2     3    9       12      1
+Three                 2      0         0     0    4        0      0
+Four                  3      0         4     1    1        0      0
+Six                   4      4         3    12    0        1     11
+
+Dynamically generated CSV file:
+'./data/COLUMNS_('Hyundai', 'Mazda').csv'
+was CREATED: Sun Dec 29 01:07:58 2024
+
+Column-based subset COLUMNS: ('Hyundai', 'Mazda')
+                Hyundai  Mazda
+Sales Location                
+One                   2     12
+Two                   6     11
+Three                 2      0
+Four                  3      0
+Five                  0      0
+Six                   4      4
+Seven                 7      1
+
+2024-12-29 01:07:58 PST -0800
+total 28
+-r--r--r--. 1 fish fish 199 Dec 29 01:07 carsales.csv
+-r--r--r--. 1 fish fish  71 Dec 29 01:07 COLUMNS_('Mazda',).csv
+-r--r--r--. 1 fish fish  81 Dec 29 01:07 ROWS_Mazda > 1 and Mazda < 5.csv
+-r--r--r--. 1 fish fish  93 Dec 29 01:07 COLUMNS_('Mazda', 'Hyundai').csv
+-r--r--r--. 1 fish fish  71 Dec 29 01:07 COLUMNS_('Hyundai',).csv
+-r--r--r--. 1 fish fish 140 Dec 29 01:07 ROWS_Hyundai > 1 and Hyundai < 5.csv
+-r--r--r--. 1 fish fish  93 Dec 29 01:07 COLUMNS_('Hyundai', 'Mazda').csv

@@ -1,0 +1,62 @@
+Sat Dec 28 06:20:25 PM PST 2024
+ls: cannot access './data': No such file or directory
+Sat Dec 28 06:20:25 PM PST 2024
+
+Dynamically generated CSV file: './data/Original.csv'
+was CREATED: Sat Dec 28 18:20:26 2024
+
+df_original info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 5 entries, 0 to 4
+Data columns (total 4 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   Count   5 non-null      int64 
+ 1   Item    5 non-null      object
+ 2   Size    5 non-null      object
+ 3   Color   5 non-null      object
+dtypes: int64(1), object(3)
+memory usage: 200.0+ bytes
+
+original:
+   Count    Item    Size   Color
+0      3    coat   large     red
+1      4   shirt  medium  yellow
+2      5    coat  medium    blue
+3      6  beanie   small  yellow
+4      7   shirt   large     red
+
+categoric:
+     Item    Size   Color
+0    coat   large     red
+1   shirt  medium  yellow
+2    coat  medium    blue
+3  beanie   small  yellow
+4   shirt   large     red
+
+transformed:
+   Count  Item_beanie  Item_coat  Item_shirt  Size_large  Size_medium  \
+0      3          0.0        1.0         0.0         1.0          0.0   
+1      4          0.0        0.0         1.0         0.0          1.0   
+2      5          0.0        1.0         0.0         0.0          1.0   
+3      6          1.0        0.0         0.0         0.0          0.0   
+4      7          0.0        0.0         1.0         1.0          0.0   
+
+   Size_small  Color_blue  Color_red  Color_yellow  
+0         0.0         0.0        1.0           0.0  
+1         0.0         0.0        0.0           1.0  
+2         0.0         1.0        0.0           0.0  
+3         1.0         0.0        0.0           1.0  
+4         0.0         0.0        1.0           0.0  
+
+Dynamically generated CSV file: './data/Categoric.csv'
+was CREATED: Sat Dec 28 18:20:26 2024
+
+Dynamically generated CSV file: './data/Transformed.csv'
+was CREATED: Sat Dec 28 18:20:26 2024
+
+2024-12-28 18:20:26 PST -0800
+total 12
+-r--r--r--. 1 fish fish 131 Dec 28 18:20 Original.csv
+-r--r--r--. 1 fish fish 308 Dec 28 18:20 Transformed.csv
+-r--r--r--. 1 fish fish 115 Dec 28 18:20 Categoric.csv

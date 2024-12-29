@@ -1,0 +1,64 @@
+Fri Dec 27 04:00:23 PM PST 2024
+ls: cannot access './data': No such file or directory
+Fri Dec 27 04:00:23 PM PST 2024
+
+Dynamically generated CSV file: './data/original_rows.csv'
+was CREATED: Fri Dec 27 16:00:23 2024
+
+df_Rows info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 8 entries, 0 to 7
+Data columns (total 6 columns):
+ #   Column   Non-Null Count  Dtype  
+---  ------   --------------  -----  
+ 0   BYD      7 non-null      float64
+ 1   Ford     6 non-null      float64
+ 2   Hyundai  7 non-null      float64
+ 3   Jaguar   0 non-null      float64
+ 4   Mazda    7 non-null      float64
+ 5   Volvo    4 non-null      float64
+dtypes: float64(6)
+memory usage: 448.0 bytes
+
+Original Rows:
+   BYD  Ford  Hyundai  Jaguar  Mazda  Volvo
+0  9.0   3.0      2.0     NaN   12.0    1.0
+1  9.0   2.0      3.0     NaN   12.0    1.0
+2  NaN   NaN      NaN     NaN    NaN    NaN
+3  4.0   NaN      6.0     NaN    0.0    NaN
+4  1.0   1.0      3.0     NaN    0.0    NaN
+5  0.0   6.0      0.0     NaN    0.0    NaN
+6  1.0  11.0      7.0     NaN    4.0   12.0
+7  1.0  12.0      7.0     NaN    4.0   11.0
+
+Rows not containing only Nan:
+   BYD  Ford  Hyundai  Jaguar  Mazda  Volvo
+0  9.0   3.0      2.0     NaN   12.0    1.0
+1  9.0   2.0      3.0     NaN   12.0    1.0
+2  4.0   NaN      6.0     NaN    0.0    NaN
+3  1.0   1.0      3.0     NaN    0.0    NaN
+4  0.0   6.0      0.0     NaN    0.0    NaN
+5  1.0  11.0      7.0     NaN    4.0   12.0
+6  1.0  12.0      7.0     NaN    4.0   11.0
+
+Dynamically generated CSV file: './data/No_Nan_only_rows.csv'
+was CREATED: Fri Dec 27 16:00:23 2024
+
+Nans in numeric columns were replaced with the column mean:
+   BYD   Ford  Hyundai  Jaguar  Mazda  Volvo
+0  9.0   3.00      2.0     NaN   12.0   1.00
+1  9.0   2.00      3.0     NaN   12.0   1.00
+2  4.0   5.83      6.0     NaN    0.0   6.25
+3  1.0   1.00      3.0     NaN    0.0   6.25
+4  0.0   6.00      0.0     NaN    0.0   6.25
+5  1.0  11.00      7.0     NaN    4.0  12.00
+6  1.0  12.00      7.0     NaN    4.0  11.00
+
+Dynamically generated CSV file: './data/Nans_2_Col_mean.csv'
+was CREATED: Fri Dec 27 16:00:23 2024
+
+2024-12-27 16:00:23 PST -0800
+total 12
+-r--r--r--. 1 fish fish 200 Dec 27 16:00 original_rows.csv
+-r--r--r--. 1 fish fish 192 Dec 27 16:00 No_Nan_only_rows.csv
+-r--r--r--. 1 fish fish 221 Dec 27 16:00 Nans_2_Col_mean.csv
